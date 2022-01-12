@@ -1,4 +1,4 @@
-package d10_1_2022;
+package d11_1_2022;
 
 
 
@@ -11,7 +11,13 @@ public class Zadatak2 {
 		w.markaKlime="Samsung";
 		w.temp=20;
 		w.mod="greje";
+		w.elGreje=2;
+		w.elHladi=1;
 		
+		
+		
+		int potrosnja=w.mesecnaPotrosnja();
+		System.out.println("Mesecna potrosnja je :" +potrosnja);
 		w.print();
 		
 		
