@@ -6,18 +6,20 @@ public class zadatak3 {
 		// TODO Auto-generated method stub
 
 		FacebookPost r = new FacebookPost();
-		r.ImeIPrezimeKorisnika = "Milan Markovic";
+		r.imeIPrezimeKorisnika = "Milan Markovic";
 		r.imeIPrezimeObjave = "Saska Mitrovic";
 		r.tekst = "CAO";
 		r.brojDeljenja = 5;
 		r.brojLajkova = 50;
 
-		r.like();
-		r.share();
-		r.dislike();
-		r.print();
+	r.like();
+	r.share();
+	r.dislike();
+	r.print();
 		
-		
+System.out.println("Ime osobe koja je korisnik: "+ r.getimeIPrezimeKorisnika()+" Ime osobe koja je objavila: " +r.getImeIPrezimeObjave() );
+		System.out.println("Tekst poruke: "+r.gettekst());
+		System.out.println("Broj lajkova: " +r.getbrojLajkova()+" Broj deljenja: "+r.brojDeljenja);
 		
 	
 	}

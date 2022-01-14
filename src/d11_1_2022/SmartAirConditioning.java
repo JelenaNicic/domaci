@@ -8,7 +8,8 @@ public class SmartAirConditioning {
 	String mod;
 
 	public void print() {
-		System.out.println("Marka klime " + this.markaKlime + "Mod" + this.mod + "Temperatura" + this.temp);
+		System.out.println(
+				"Marka klime: " + this.markaKlime + ";" + " Mod: " + this.mod + ";" + "Temperatura: " + this.temp);
 
 	}
 
@@ -22,9 +23,19 @@ public class SmartAirConditioning {
 		}
 		return mesecnaPotrosnja;
 	}
-	/// public kolikoTrosi() {////nisam sigurna kako ovo da uradim
 
+	public int potrosnjaKlime() {
+		int mesecnaPotrosnja = 0;
+		if (this.mesecnaPotrosnja() <= 350) {
+			mesecnaPotrosnja = this.mesecnaPotrosnja() * 6;
+		} else {
+			mesecnaPotrosnja = 350 * 6 + (this.mesecnaPotrosnja() - 350) * 9;
+		}
+		return mesecnaPotrosnja;
+
+	}
 }
+
 		
 		
 		

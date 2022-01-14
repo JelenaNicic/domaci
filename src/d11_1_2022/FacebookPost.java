@@ -1,12 +1,47 @@
 package d11_1_2022;
 
 public class FacebookPost {
+//  Od gettera i settera:
+//		  korisnik moze da procita bilo koji atribut 
+//		  ali ne moze da menja broj lajkova 	i broj deljenja (nemamo settere za ove atribute)
+//		   Konstruktore:
+//		  	konstruktori koji su potrebni i logicni
 
 	String imeIPrezimeObjave;
-	String ImeIPrezimeKorisnika;
+	String imeIPrezimeKorisnika;
 	String tekst;
-	int brojLajkova;
-	int brojDeljenja;
+	int brojLajkova;////samo get
+	int brojDeljenja;////samo get
+	
+	public FacebookPost(){
+		
+	}
+	public FacebookPost(String imeIPrezimeObjave,String imeIPrezimeKorisnika,String tekst,int brojLajkova,int brojDeljenja) {
+		this.imeIPrezimeObjave=imeIPrezimeObjave;
+		this.imeIPrezimeKorisnika=imeIPrezimeKorisnika;
+		this.tekst=tekst;
+		this.brojLajkova=brojLajkova;
+		this.brojDeljenja=brojDeljenja;
+		
+	}
+	
+	
+
+	public String getImeIPrezimeObjave() {
+		return this.imeIPrezimeObjave;
+	}
+	public String getimeIPrezimeKorisnika() {
+		return this.imeIPrezimeKorisnika;
+	}
+		public String gettekst() {
+			return this.tekst;
+		}
+	public int getbrojDeljenja() {
+		return this.brojDeljenja;
+	}
+	public int getbrojLajkova() {
+		return this.brojLajkova;
+	}
 
 	public void like() {
 		this.brojLajkova = this.brojLajkova + 1;
@@ -24,7 +59,7 @@ public class FacebookPost {
 	}
 
 	public void print() {
-		System.out.println("Ime i prezime osobe koja je objavila tekst: " + this.ImeIPrezimeKorisnika + ">>>>>>"
+		System.out.println("Ime i prezime osobe koja je objavila tekst: " + this.imeIPrezimeKorisnika + ">>>>>>"
 				+ "Ime i prezime na cijem profilu: " + this.imeIPrezimeObjave);
 		System.out.println("Tekst objave: " + this.tekst);
 		System.out.println("Likes: " + this.brojLajkova + "Shares: " + this.brojDeljenja);
