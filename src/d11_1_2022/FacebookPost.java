@@ -10,35 +10,51 @@ public class FacebookPost {
 	String imeIPrezimeObjave;
 	String imeIPrezimeKorisnika;
 	String tekst;
-	int brojLajkova;////samo get
-	int brojDeljenja;////samo get
-	
-	public FacebookPost(){
-		
+	int brojLajkova;//// samo get
+	int brojDeljenja;//// samo get
+
+	public FacebookPost() {
+
 	}
-	public FacebookPost(String imeIPrezimeObjave,String imeIPrezimeKorisnika,String tekst,int brojLajkova,int brojDeljenja) {
-		this.imeIPrezimeObjave=imeIPrezimeObjave;
-		this.imeIPrezimeKorisnika=imeIPrezimeKorisnika;
-		this.tekst=tekst;
-		this.brojLajkova=brojLajkova;
-		this.brojDeljenja=brojDeljenja;
-		
+
+	public FacebookPost(String imeIPrezimeObjave, String imeIPrezimeKorisnika, String tekst, int brojLajkova,
+			int brojDeljenja) {
+		this.imeIPrezimeObjave = imeIPrezimeObjave;
+		this.imeIPrezimeKorisnika = imeIPrezimeKorisnika;
+		this.tekst = tekst;
+		this.brojLajkova = brojLajkova;
+		this.brojDeljenja = brojDeljenja;
+
 	}
-	
-	
 
 	public String getImeIPrezimeObjave() {
 		return this.imeIPrezimeObjave;
 	}
+
+	public void setImeIPrezime(String imeIPrezime) {
+		this.imeIPrezimeObjave = imeIPrezime;
+	}
+
 	public String getimeIPrezimeKorisnika() {
 		return this.imeIPrezimeKorisnika;
 	}
-		public String gettekst() {
-			return this.tekst;
-		}
+
+	public void setImeIPrezimeKorisnika(String imeIPrezimeKorisnika) {
+		this.imeIPrezimeKorisnika = imeIPrezimeKorisnika;
+	}
+
+	public String getTekst() {
+		return this.tekst;
+	}
+
+	public void setTekst(String tekst) {
+		this.tekst = tekst;
+	}
+
 	public int getbrojDeljenja() {
 		return this.brojDeljenja;
 	}
+
 	public int getbrojLajkova() {
 		return this.brojLajkova;
 	}

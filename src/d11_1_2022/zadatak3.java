@@ -12,19 +12,26 @@ public class zadatak3 {
 		r.brojDeljenja = 5;
 		r.brojLajkova = 50;
 
-	r.like();
-	r.share();
-	r.dislike();
-	r.print();
-		
-System.out.println("Ime osobe koja je korisnik: "+ r.getimeIPrezimeKorisnika()+" Ime osobe koja je objavila: " +r.getImeIPrezimeObjave() );
-		System.out.println("Tekst poruke: "+r.gettekst());
-		System.out.println("Broj lajkova: " +r.getbrojLajkova()+" Broj deljenja: "+r.brojDeljenja);
-		
-	
+		r.like();
+		r.share();
+		r.dislike();
+		r.print();
+
+		System.out.println("Ime osobe koja je korisnik: " + r.getimeIPrezimeKorisnika()
+				+ " Ime osobe koja je objavila: " + r.getImeIPrezimeObjave());
+		System.out.println("Tekst poruke: " + r.getTekst());
+		System.out.println("Broj lajkova: " + r.getbrojLajkova() + " Broj deljenja: " + r.brojDeljenja);
+
+		FacebookPost w = new FacebookPost();
+		w.setImeIPrezime("Katarina Milenkovic ");
+		w.setImeIPrezimeKorisnika("Aca Milosevic ");
+		w.setTekst("Pozdrav");
+
+		w.print();
+
+		FacebookPost n = new FacebookPost("Milena Nikolic", "Andrijana Milic", "Hello", 8, 30);
+		n.print();
+
 	}
 
-	
-	}
-
-
+}
