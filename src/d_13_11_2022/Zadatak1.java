@@ -7,28 +7,14 @@ public class Zadatak1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
-		FacebookPost r = new FacebookPost();
-		r.setImeIPrezimeKorisnika("Milan Markovic");
-		r.setImeIPrezimeKorisnika("Saska Mitrovic");;
-		r.setTekst("Cao");
-		r.getbrojDeljenja();
-		r.getbrojLajkova();
-
-		r.like();
-		r.share();
-		r.dislike();
+		FacebookPost r = new FacebookPost("Milan Markovic","Saska Mitrovic","Caoooo",6, 90);
+		
+		
 		r.print();
 
-		System.out.println("Ime osobe koja je korisnik: " + r.getimeIPrezimeKorisnika()
-				+ " Ime osobe koja je objavila: " + r.getImeIPrezimeObjave());
-		System.out.println("Tekst poruke: " + r.getTekst());
-		System.out.println("Broj lajkova: " + r.getbrojLajkova() + " Broj deljenja: " + r.getbrojDeljenja());
-
-		FacebookPost w = new FacebookPost();
-		w.setImeIPrezime("Katarina Milenkovic ");
-		w.setImeIPrezimeKorisnika("Aca Milosevic ");
-		w.setTekst("Pozdrav");
-
+	
+		FacebookPost w = new FacebookPost("Katarina Milenkovic","Aca Milosevic","Pozdrav",587, 48);
+		
 		w.print();
 
 		FacebookPost n = new FacebookPost("Milena Nikolic", "Andrijana Milic", "Hello", 8, 30);
