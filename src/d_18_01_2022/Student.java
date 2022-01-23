@@ -86,6 +86,7 @@ public class Student {
 	public void print() {
 		System.out.println("Broj indeksa: " + this.brojIndeksa +" "+" Ime i prezime: " + this.imeIPrezime + " Tip studija: "
 				+ this.tipStudija);
+		System.out.println("Predmeti: ");
 		for (int i = 0; i < nizIspita.size(); i++) {
 			System.out.println(this.nizIspita.get(i).getNazivPredmeta());
 			System.out.println(this.nizIspita.get(i).getImeIPrezimeProfesora());
