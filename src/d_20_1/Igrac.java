@@ -91,6 +91,7 @@ public class Igrac extends Osoba {
 //		metodu koja vraca broj zutih kartona
 //		metodu koja vraca broj crvenih kartona
 //		metodu stampaj, koju prepisuje iz glavne klase, tako da stampa sve informacije o igracu
-//
-//
-//}
+
+
+
+

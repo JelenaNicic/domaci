@@ -17,10 +17,10 @@ public class Zadatak1 {
 		magacioner.zaposliSe(sektor1);
 		menadzer.zaposliSe(sektor);
 		menadzer.zaposliSe(sektor2);
-double plata1=magacioner.plata();
-System.out.println(plata1);
-double plata=menadzer.plata();
-		 System.out.println(plata);
+        double plata1=magacioner.plata();
+        System.out.println(plata1);
+        double plata=menadzer.plata();
+		System.out.println(plata);
 		
 	}
 
