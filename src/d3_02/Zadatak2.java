@@ -3,7 +3,16 @@ package d3_02;
 public class Zadatak2 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		
+//		Napisati program koji:
+//			Ucitava stanicu https://www.wikipedia.org/
+//			Sa stranice sakuplja sve linkove (jezike) i svaki link otvara u novom prozoru pretrazivaca
+//			Svaki link potrebno je otvoriti u novom tabu.
+//			Skripta: window.open(arguments[0]);
+
+
+		
+		
 		import java.io.File;
 		import java.util.List;
 		import java.util.Scanner;
@@ -14,10 +23,6 @@ public class Zadatak2 {
 		import org.openqa.selenium.WebDriver;
 		import org.openqa.selenium.WebElement;
 		import org.openqa.selenium.chrome.ChromeDriver;
-
-		public class Zadatak2 {
-
-			public static void main(String[] args) {
 
 				System.setProperty("webdriver.chrome.driver", "driver-lib/chromedriver.exe");
 
